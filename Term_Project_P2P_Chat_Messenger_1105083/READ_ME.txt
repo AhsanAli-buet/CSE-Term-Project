@@ -1,5 +1,5 @@
 P2P Chat Messenger is a term project of BUET CSE Level-2 Term-1 developed by Ahsan Ali 1105083
-under supervision of Assistant Professor Mohammad Saifur Rahman. This project is implemented in
+under supervision of Assistant Professor Mohammad Saifur Rahman. This project is implemented using
 java jdk7 version.
 
 P2P Chat Messenger is a LAN chat messenger i.e., Devices should be connected in same LAN network adapter
