@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BashaBhara.com</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href=" <?php echo e(asset('/css/bootstrap.min.css')); ?>" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href=" <?php echo e(asset('/css/bashavara.css')); ?>" rel="stylesheet">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bashavara</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="#">Post Add</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <div class="container">   
+      <form class="form-horizontal" action="PostAd" method="POST">
+        <fieldset>
+          <div id="legend">
+              <legend class=""><h2>Post Your Advertisement Here</h2></legend>
+                <?php if(!empty($message)): ?>
+                    <p><?php echo e($message); ?></p>
+                <?php endif; ?>
+          </div>
+
+          <div class="control-group">
+          <!-- Username -->
+            <label class="control-label" >Location:</label>
+            <hr id="foken">
+            <div class="row">
+              <div class="col-md-4">
+                  <div class="col-md-4">
+                    <label class="control-label">Division:</label>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="form-group">
+                        <select class="form-control" id="sel1" name="division">
+                            <option value="Dhake">Dhaka</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Sylhet">Sylhet</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Barisal">Barishal</option>
+                            <option value="Rangpur">Rongpur</option>
+                            <option value="Mymenshing">Mymenshing</option>
+                        </select>
+                      </div>
+                  </div>
+              </div>
+            <div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="col-md-4">
+                  <label class="control-label">City: </label>
+              </div>
+              <div class="col-md-8">
+                  <div class="form-group">
+                        <select class="form-control" id="sel1" name="city">
+                            <option value="Dhake">Dhaka</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Sylhet">Sylhet</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Barisal">Barishal</option>
+                            <option value="Rangpur">Rongpur</option>
+                            <option value="Mymenshing">Mymenshing</option>
+                        </select>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+                  <div class="col-md-4">
+                    <label class="control-label" >Area: </label>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="form-group controls">
+                        <select class="form-control" id="sel1" name="area">
+                            <option value="Uttara">Uttara</option>
+                            <option value="Mirpur">Mirpur</option>
+                            <option value="Mohamadpur">Mohamadpur</option>
+                            <option value="Gulsan">Gulsan</option>
+                            <option value="Banani">Banani</option>
+                            <option value="Lalbag">Lalbag</option>
+                            <option value="Jatrabari">Jatrabari</option>
+                            <option value="Dhanmondi">Dhanmondi</option>
+                            <option value="Mohakhali">Mohakhali</option>
+                            <option value="Motijheel">Motijheel</option>
+                            <option value="Shantinogor">Shantinogor</option>
+                            <option value="Arambag">Arambag</option>
+                        </select>
+                      </div>
+                  </div>
+          </div>
+
+          <div class="container form-group radio-group">
+              <label class="control-label"  for="username">Listing Type </label>
+              <hr id="foken">
+               <label class="radio-inline"><input type="radio" value="Residential">Residential</label>
+               <label class="radio-inline"><input type="radio" value="Commercial">Commercial</label>
+               <label class="radio-inline"><input type="radio" value="Business">Business</label>	
+		      </div>
+            <br>
+
+            <div class="control-group container">
+              <label class="control-label">Property Specification</label>
+              <hr id="foken">
+            </div>
+            
+
+            <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label">Property type: </label>
+                  </div>
+                  <div class="col-md-8">
+                     <div class=" input-xlarge form-group">
+                        <select class="form-control" id="sel1" name="ptype">
+                            <option value="Duplex">Duplex</option>
+                            <option value="Flat">Flat</option>
+                            <option value="Sublet">Sublet</option>
+                            <option value="Floor">Floor</option>
+                        </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label" >Property Name: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox" placeholder="" class="form control" name="pname">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label" >property Address: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox2"placeholder="" class="input-xlarge" name="address">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label"  for="username">Bed: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox"  placeholder="" class="input-xlarge" name="bed">
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label">Bath: </label>
+                  </div>
+                  <div class="col-md-8 form-group form-group">
+                     <input type="text" id="textBox" placeholder="" class="input-xlarge" name="bath">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+
+          <div class="control-group container">
+            <div class="row container">
+              <div class="col-md-2">
+                 <label class="control-label"  for="username">Listing Type </label>
+              </div>
+              <div class="col-md-10 form-group">
+                  <label class="checkbox-inline"><input type="checkbox" value="" name="lift">Lift</label>
+                  <label class="checkbox-inline"><input type="checkbox" value="" name="garage">Garage</label>
+                  
+              </div>
+            </div>
+          </div>
+ 
+             
+          <br>
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label"  for="username">Short Description: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="largerTextBox"  placeholder="" class="input-xlarge" name="description">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label"  for="username">Upload picture: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="upload" id="textBox" placeholder="" class="input-xlarge" name="image">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label" >Price: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox"  placeholder="" class="input-xlarge" name="price">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label" >What's nearby: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="largerTextBox" placeholder="" class="input-xlarge" name="nearby">
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          </br>
+		  
+		  <div class="control-group container">
+              <label class="control-label">Contact Information</label>
+              <hr id="foken">
+          </div>
+		  
+		  
+		  <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label"  for="username">Name: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox" placeholder="" class="input-xlarge" name="username">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label" >Contact Number: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox" placeholder="" class="input-xlarge" name="contact">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+		  
+		  <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label"  for="username">Email: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox" placeholder="" class="input-xlarge" name="email">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+          <div class="control-group container">
+          <!-- Username -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label class="control-label" >Appoinment time: </label>
+                  </div>
+                  <div class="col-md-8 form-group">
+                     <input type="text" id="textBox" placeholder="" class="input-xlarge" name="appoint">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+		  
+          <div class="ccontrol-group col-md-7">
+            <!-- Button -->
+            <div class="controls form-group">
+              <button class="btn btn-success pull-right">Submit</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

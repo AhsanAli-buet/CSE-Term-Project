@@ -1,0 +1,8 @@
+<?php echo Form::open(array('url'=>'/upload','method'=>'POST', 'files'=>true)); ?>
+
+<?php echo Form::file('images[]', array('multiple'=>true)); ?>
+
+
+<?php echo Form::submit('Submit', array('class'=>'send-btn')); ?>
+
+<?php echo Form::close(); ?>

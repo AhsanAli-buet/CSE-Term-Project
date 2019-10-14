@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Creative One Page Parallax Template">
+  <meta name="keywords" content="Creative, Onepage, Parallax, HTML5, Bootstrap, Popular, custom, personal, portfolio" /> 
+  <meta name="author" content=""> 
+  <title>BashaBhara.com</title>
+  <link href=" {{ asset('/css/bootstrap.min.css') }}" rel="stylesheet"> 
+  <link href=" {{ asset('/home/css/prettyPhoto.css') }}" rel="stylesheet">
+  <link href=" {{ asset('/home/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href=" {{ asset('/home/css/animate.css') }}" rel="stylesheet">
+  <link href=" {{ asset('/home/css/main.css') }}" rel="stylesheet">
+ <link href=" {{ asset('/home/css/responsive.css') }}" rel="stylesheet">
+  
+  
+  <!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
+  <script src="js/respond.min.js"></script> <![endif]--> 
+  <link rel="shortcut icon" href="images/ico/favicon.png"> 
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('/home/images/ico/apple-touch-icon-144-precomposed.png') }}"> 
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('/home/images/ico/apple-touch-icon-114-precomposed.png') }}"> 
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('/home/images/ico/apple-touch-icon-72-precomposed.png') }}"> 
+  <link rel="apple-touch-icon-precomposed" href="{{ asset('/home/images/ico/apple-touch-icon-57-precomposed.png') }}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="preloader">
+    <div class="preloder-wrap">
+      <div class="preloder-inner"> 
+        <div class="ball"></div> 
+        <div class="ball"></div> 
+        <div class="ball"></div> 
+        <div class="ball"></div> 
+        <div class="ball"></div> 
+        <div class="ball"></div> 
+        <div class="ball"></div>
+      </div>
+    </div>
+  </div><!--/.preloader-->
+
+    <!-- Navigation -->
+<header id="navigation"> 
+    <div class="navbar navbar-inverse navbar-fixed-top" role="banner" style="background: #F6F6F6"> 
+      <div class="container"> 
+        <div class="navbar-header"> 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+          </button> 
+          <a class="navbar-brand" id="home-brand" href="{{URL::to('/')}}"><h1><img src="{{asset('/home/images/logop.png')}}" alt="logo"></h1></a>
+          
+        </div> 
+        <div class="collapse navbar-collapse"> 
+          <div class="row">
+          <ul class="nav navbar-nav navbar-right" id="head-nav1"> 
+            
+            @if(Session::get('userlogin'))
+                        
+                <li class="scroll"><a href="{{ URL::to('/MyProfile')}}"><i class="fa fa-user"></i> {{ Session::get('username')}}</a></li>
+                <li class="scroll"><a href="{{ URL::to('/Logout')}}"><i class="fa fa-sign-out"></i>Log Out</a></li>
+                       
+           @endif
+
+           @if(!Session::get('userlogin'))
+                        
+                <li class="scroll"><a href="{{ URL::to('/LogIn')}}"><i class="fa fa-sign-in"></i>Log In</a></li>
+                <li class="scroll"><a href="{{ URL::to('/Register')}}"><i class="fa fa-user-plus"></i>Register</a></li>
+
+           @endif 
+          </ul> 
+          </div>
+          <div class="row">
+          <ul class="nav navbar-nav navbar-right" id="head-nav2"> 
+          
+          <li class="scroll"><a href="#clients"><i class="fa fa-bookmark"></i>My WishList</a></li> 
+		<li class="scroll"><a href="{{ URL::to('/CreateAlert')}}"><i class="fa fa-thumb-tack"></i>Property Alert</a></li> 
+		<li class="scroll"><a href="#contact"><i class="fa fa-bell"></i>Property Notification</a></li>
+		<li class="scroll"><a href="#contact"><i class="fa fa-phone"></i>Contact Us</a></li>
+
+
+        <!--  <li class="scroll"><a href="{{ URL::to('/Rent')}}"><i class="fa fa-money"></i>Rent</a></li>
+          <li class="scroll"><a href="#clients"><i class="fa fa-suitcase"></i>Buy</a></li> 
+          <li class="scroll"><a href="{{ URL::to('/PostAd')}}"><i class="fa fa-pencil"></i>Advertise</a></li>  
+          <li class="scroll"><a href="{{ URL::to('/MyProfile')}}"><i class="fa fa-list-alt"></i>My Advertisement</a></li> 
+            <li class="scroll"><a href="#clients"><i class="fa fa-bookmark"></i>My WishList</a></li> 
+            <li class="scroll"><a href="#blog"><i class="fa fa-thumb-tack"></i>Create Alert</a></li> 
+            <li class="scroll"><a href="#contact"><i class="fa fa-bell"></i>Notifications</a></li>--> 
+                
+          </ul> 
+          </div>
+        </div>
+
+        
+        
+      </div> 
+    </div><!--/navbar--> 
+</header> 
+
+	<section id="home">
+		<div class="home-pattern"></div>
+		<div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel"> 
+			<ol class="carousel-indicators">
+				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#main-carousel" data-slide-to="1"></li>
+				<li data-target="#main-carousel" data-slide-to="2"></li>
+			</ol><!--/.carousel-indicators--> 
+			<div class="carousel-inner">
+				<div class="item active" style="background-image: url({{asset('/home/images/slider/slide3.jpg')}})"> 
+					<div class="carousel-caption"> 
+						<div> 
+							<h3 id="car-h3">WELCOME TO BASHABHARA.COM</h3> 
+							<p>RENT,BUY or ADVERTISE Your Property</p> 
+							<a class="btn btn-default slider-btn animated fadeIn" href="{{ URL::to('/Rent')}}">RENT HOME</a>
+							<a class="btn btn-default slider-btn animated fadeIn" href="{{ URL::to('/PostAd')}}">POST ADVERTISEMENT</a> 
+
+						</div> 
+					</div> 
+				</div>
+				<div class="item" style="background-image: url({{asset('/home/images/slider/slide5.jpg')}})"> 
+					<div class="carousel-caption"> <div> 
+						<h3 id="car-h3">POST ADVERTISEMENT OF YOUR BEAUTIFUL HOME, APARTMENT</h3> 
+						<p style="font-size: 30px">Everything is FREE and SIMPLE here </p> 
+						<a class="btn btn-default slider-btn animated fadeIn" href="{{ URL::to('/Rent')}}">RENT HOME</a>
+						<a class="btn btn-default slider-btn animated fadeIn" href="{{ URL::to('/PostAd')}}">POST ADVERTISEMENT</a> 
+					</div> 
+				</div> 
+			</div> 
+			<div class="item" style="background-image: url({{asset('/home/images/slider/slide7.jpg')}})"> 
+				<div class="carousel-caption"> 
+					<div> 
+						<h3 id="car-h3">FIND YOUR SUITABLE HOME,FLAT OR APARTMENT</h3> 
+						<p style="font-size: 30px">There Are THOUSANDS of PROPERTY LISTINGS here</p> 
+						<a class="btn btn-default slider-btn animated fadeIn" href="{{ URL::to('/Rent')}}">RENT HOME</a>
+						<a class="btn btn-default slider-btn animated fadeIn" href="{{ URL::to('/PostAd')}}">POST ADVERTISEMENT</a> 
+					</div> 
+				</div> 
+			</div>
+		</div><!--/.carousel-inner-->
+
+		<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+		<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+	</div> 
+
+</section><!--/#home-->
+
+
+	
+	<section id="option" class="parallax-option">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h2 class="title-one" style="color: black">Our Services</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="our-option">
+						<div class="option row">
+							<div class="col-sm-4">
+								<div class="single-option">
+									<i class="fa fa-money"></i>
+									<h2>RENT</h2>
+									<p> </p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="single-option">
+									<i class="fa fa-suitcase"></i>
+									<h2>BUY</h2>
+									<p> </p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="single-option">
+									<i class="fa fa-pencil"></i>
+									<h2>ADVERTISE</h2>
+									<p> </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- second row -->
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="our-option">
+						<div class="option row">
+							<div class="col-sm-4">
+								<div class="single-option">
+									<i class="fa fa-bell"></i>
+									<h2>PROPERTY ALERT</h2>
+									<p> </p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="single-option">
+									<i class="fa fa-list-alt"></i>
+									<h2>MY ADVERTISEMENT</h2>
+									<p> </p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="single-option">
+									<i class="fa fa-star"></i>
+									<h2>MY WISHLIST</h2>
+									<p> </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--second row-->
+			
+			
+		</div>
+	</section><!--/#service-->
+	
+	
+	<!-- Log In PLEASE! -->
+		
+		
+		<section id="Login">
+			<div class="container">
+				<div class="row text-center clearfix">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="Login-heading">
+							<h2 class="title-one">Log In PLEASE!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="Login-details">
+					<div class="pattern"></div>
+					<div class="row clearfix">
+						<div class="col-sm-6">
+							<div class="Login-address">
+								<h3>Log In Using Social Sites</h3>
+								<div class="social-icons">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6"> 
+							<div id="Login-form-section">
+								<div class="status alert alert-success" style="display: none"></div>
+								<form id="Login-form" class="Login" name="Login-form" method="post" action="">
+									<div class="form-group">
+										<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
+									</div> 
+									
+									<div class="form-group">
+										<input type="password" name="name" class="form-control password-field" required="required" placeholder="Password">
+									</div>
+								
+									<div class="form-group">
+										<button type="submit" class="btn btn-primary">LogIn</button>
+									</div>
+								</form> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</section> <!--/#LogIn--> 
+			
+			<!-- Registration-->
+			
+			<section id="Register">
+			<div class="container">
+				<div class="row text-center clearfix">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="Register-heading">
+							<h2 class="title-one">Do Your Registration Here</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="Register-details">
+					<div class="pattern"></div>
+					<div class="row clearfix">
+						<div class="col-sm-6">
+							
+						</div>
+						<div class="col-sm-6"> 
+							<div id="Register-form-section">
+								<div class="status alert alert-success" style="display: none"></div>
+								<form id="Register-form" class="Register" name="Register-form" method="post" action="">
+									
+									<div class="form-group">
+										<input type="name" name="name" class="form-control mail-field" required="required" placeholder="User Name">
+									</div>
+									
+									<div class="form-group">
+										<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
+									</div> 
+									
+									<div class="form-group">
+										<input type="password" name="password" class="form-control password-field" required="required" placeholder="Password">
+									</div>
+									
+									<div class="form-group">
+										<input type="password" name="password" class="form-control password-field" required="required" placeholder="Confirm Password">
+									</div>
+								
+									<div class="form-group">
+										<button type="submit" class="btn btn-primary">LogIn</button>
+									</div>
+								</form> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</section>
+			
+			
+			
+			<!--Registration-->
+	
+	<section id="services" class="parallax-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h2 class="title-one">Our Apps</h2>
+					<h3>Download Our BashaBhara App From Following Marketplaces</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="our-service">
+						<div class="services row">
+							<div class="col-sm-4">
+								<div class="single-service">
+									<i class="fa fa-android"></i>
+									<h2>Google Play</h2>
+									<p> </p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="single-service">
+									<i class="fa fa-apple"></i>
+									<h2>Apple Store</h2>
+									<p> </p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="single-service">
+									<i class="fa fa-windows"></i>
+									<h2>Windows Store</h2>
+									<p> </p>
+								</div>
+							</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/#service-->
+
+		
+		<section id="contact">
+			<div class="container">
+				<div class="row text-center clearfix">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="contact-heading">
+							<h2 class="title-one">Contact With Us</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="contact-details">
+					<div class="pattern"></div>
+					<div class="row text-center clearfix">
+						<div class="col-sm-6">
+							<div class="contact-address"><address><p><span>Basha</span>Bhara.com</p><strong>BUET<br>Zahir Raihan Road<br> Dhaka-1000, Bangladesh</strong></address>
+								<div class="social-icons">
+									<a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6"> 
+							<div id="contact-form-section">
+								<div class="status alert alert-success" style="display: none"></div>
+								<form id="contact-form" class="contact" name="contact-form" method="post" action="">
+									<div class="form-group">
+										<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name"></div>
+										<div class="form-group">
+											<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
+										</div> 
+										<div class="form-group">
+											<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+										</div> 
+										<div class="form-group">
+											<button type="submit" class="btn btn-primary">Send</button>
+										</div>
+									</form> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</section> <!--/#contact--> 
+
+	<footer id="footer"> 
+    <div class="container"> 
+      <div class="text-center"> 
+        <p>Copyright &copy; 2015 - <a href="">BashaBhara.com</a> | All Rights Reserved</p> 
+        <a href="{{ URL::to('/AdminPanel')}}">Admin</a>
+      </div> 
+    </div> 
+  </footer> <!--/#footer--> 
+
+  <script src="{{ asset('/home/js/jquery.js') }}"></script> 
+  <script src="{{ asset('/home/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('/home/js/smoothscroll.js') }}"></script> 
+  <script src="{{ asset('/home/js/jquery.isotope.min.js') }}"></script>
+  <script src="{{ asset('/home/js/jquery.prettyPhoto.js') }}"></script> 
+  <script src="{{ asset('/home/js/jquery.parallax.js') }}"></script> 
+  <script src="{{ asset('/home/js/main.js') }}"></script>  
+</body>
+</html>

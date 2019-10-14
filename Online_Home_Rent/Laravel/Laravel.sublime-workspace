@@ -1,0 +1,477 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max_id"
+			],
+			[
+				"me",
+				"meta_tag_name"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"file",
+				"file_count"
+			],
+			[
+				"meta",
+				"meta_tag"
+			],
+			[
+				"Admin",
+				"AdminPost"
+			],
+			[
+				"data",
+				"data_meta_tag"
+			],
+			[
+				"Ad",
+				"AdminPanel"
+			],
+			[
+				"post",
+				"PostAd"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"admin",
+				"admin_load_main"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"current",
+				"current_page"
+			],
+			[
+				"log",
+				"login_validate"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"str",
+				"strlen"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"admin_has",
+				"admin_hash_key"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"inter",
+				"Interview"
+			],
+			[
+				"tag",
+				"tag_name"
+			],
+			[
+				"Home",
+				"Home_new_link"
+			],
+			[
+				"s_",
+				"s_query"
+			],
+			[
+				"ulr",
+				"url2"
+			],
+			[
+				"en",
+				"english_word"
+			],
+			[
+				"text",
+				"text_mapping"
+			],
+			[
+				"ta",
+				"tag_name"
+			],
+			[
+				"border-co",
+				"border-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/wamp/www/Ekattar/app/Http/Controllers/AdminController.php",
+			"settings":
+			{
+				"buffer_size": 12101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/wamp/www/Ekattar/app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 3138,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/wamp/www/Ekattar/resources/views/AdminPanel_modify.blade.php",
+			"settings":
+			{
+				"buffer_size": 13898,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/Ekattar",
+		"/C/wamp/www/Ekattar/app",
+		"/C/wamp/www/Ekattar/app/Http",
+		"/C/wamp/www/Ekattar/app/Http/Controllers",
+		"/C/wamp/www/Ekattar/app/Model",
+		"/C/wamp/www/Ekattar/resources",
+		"/C/wamp/www/Ekattar/resources/views"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/Ekattar/app/Model/Bongobondhu_Model.php",
+		"/C/wamp/www/Ekattar/resources/views/home_new.blade.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/HomeController.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/AdvertiseController.php",
+		"/C/wamp/www/Ekattar/app/Http/Middleware/VerifyCsrfToken.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/Auth/AuthController.php",
+		"/C/wamp/www/Ekattar/app/Http/routes.php",
+		"/C/wamp/www/Ekattar/resources/views/PostAd.blade.php",
+		"/C/wamp/www/Ekattar/app/Model/Latest_Post_Model.php",
+		"/C/wamp/www/Ekattar/app/Model/Meta_Tag_Mapping_Model.php",
+		"/C/wamp/www/Ekattar/resources/views/AdminPanel.blade.php",
+		"/C/wamp/www/Ekattar/resources/views/home_new_link.blade.php",
+		"/C/wamp/www/Ekattar/config/database.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/AdminController.php",
+		"/C/wamp/www/Ekattar/app/Model/Tag_Mapping_Model.php",
+		"/C/wamp/www/Ekattar/.env",
+		"/C/wamp/www/Ekattar/.env.example",
+		"/C/wamp/www/Ekattar/app/User.php",
+		"/C/wamp/www/Ekattar/artisan",
+		"/C/wamp/www/Ekattar/server.php",
+		"/C/wamp/www/Ekattar/storage/logs/laravel-2016-09-04.log",
+		"/C/wamp/www/Ekattar/storage/logs/laravel-2016-09-05.log",
+		"/C/wamp/www/Ekattar/resources/views/MyProfile.blade.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/LogoutController.php",
+		"/C/wamp/www/Ekattar/storage/framework/views/a3ebb305b309ffcb99c09809eb8b76c2",
+		"/C/wamp/www/Ekattar/storage/logs/laravel-2016-09-01.log",
+		"/C/wamp/www/Ekattar/resources/views/errors/503.blade.php",
+		"/C/wamp/www/Ekattar/storage/.gitignore",
+		"/C/wamp/www/Ekattar/storage/logs/.gitignore",
+		"/C/wamp/www/Ekattar/app/Providers/RouteServiceProvider.php",
+		"/C/wamp/www/Ekattar/resources/views/home_new_details.blade.php",
+		"/C/wamp/www/Ekattar/app/Model/Admin_Panel_Model.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/WelcomeController.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/ProfileController.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/AdvancedSearchController.php",
+		"/C/wamp/www/Ekattar/app/Http/Controllers/Controller.php",
+		"/C/wamp/www/Laravel/app/Http/Controllers/AdminController.php",
+		"/C/wamp/www/Laravel/resources/views/AdminPanel.blade.php",
+		"/C/wamp/www/Laravel/resources/views/home.blade.php",
+		"/C/wamp/www/Laravel/app/Http/routes.php",
+		"/C/wamp/www/Ekattar/app/Model/Admin_Message_Model.php",
+		"/C/wamp/www/Ekattar/resources/views/home_new_sublink.blade.php",
+		"/C/wamp/www/Ekattar/resources/views/home.blade.php",
+		"/C/wamp/www/Ekattar/resources/views/AdvancedSearch.blade.php",
+		"/C/wamp/www/Ekattar/app/Model/Text_Mapping_Model.php",
+		"/C/wamp/www/Ekattar/resources/views/home_new_details.php",
+		"/C/wamp/www/Ekattar/resources/views/AdDetails.blade.php",
+		"/C/wamp/www/Ekattar/app/Model/Advertise_Model.php",
+		"/C/wamp/www/Ekattar/database/seeds/DatabaseSeeder.php",
+		"/C/wamp/www/Ekattar/app/Http/Kernel.php",
+		"/C/wamp/www/Ekattar/app/Model/User_Model.php",
+		"/C/wamp/www/Ekattar/resources/views/Adbyuser.blade.php",
+		"/C/wamp/www/Ekattar/public/js/home_sidebar.js",
+		"/C/wamp/www/Ekattar/app/Http/Middleware/Authenticate.php",
+		"/C/wamp/www/Laravel/app/Http/Controllers/HomeController.php",
+		"/C/wamp/www/Laravel/.env",
+		"/C/wamp/www/Laravel/bootstrap/autoload.php",
+		"/C/wamp/www/Laravel/bootstrap/app.php",
+		"/C/wamp/www/Laravel/config/database.php",
+		"/C/wamp/www/Laravel/database/.gitignore",
+		"/C/wamp/www/Laravel/.env.example",
+		"/C/wamp/www/Laravel/phpspec.yml",
+		"/C/wamp/www/Laravel/Laravel.sublime-project"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"day",
+			"uploadcount",
+			"textarea",
+			"carbon",
+			"post",
+			"500",
+			"validator"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/wamp/www/Ekattar/app/Http/Controllers/AdminController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11130,
+								11130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6878.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/wamp/www/Ekattar/app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								963,
+								963
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/wamp/www/Ekattar/resources/views/AdminPanel_modify.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13898,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11977,
+								11977
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3906.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Laravel.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 317.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
