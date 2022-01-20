@@ -12,4 +12,4 @@ Online Home Rent is a System Design LAB project which provide users the followin
 
 Web Interface is developed with **PHP Laravel framework, Bootstrap and MySQL database**.
 
-
+![alt text](https://github.com/AhsanAli-buet/Online_Home_Rent/blob/master/System_Design/bashavara_gif.gif?raw=true)
