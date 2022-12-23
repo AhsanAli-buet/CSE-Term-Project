@@ -1,6 +1,6 @@
-# Online Home Rent
+# Bashavara
 
-Online Home Rent is a System Design LAB project which provide users the following features
+Bashavara is a System Design LAB project which provide users the following features
 
 * Register
 * Log In
